@@ -8,9 +8,12 @@
 </head>
 <body>
   <div class="wrapper">
-    <header><h1>Michael Pulley's Labs For INST 377</h1></header>
-    <div>
-      <div>
+    <!-- wrapper -->
+    <header class="header"><h1>Michael Pulley's Labs For INST 377</h1></header>
+    <div class="container">
+        <!--container-->
+      <div class="left_section">
+        <!--left inputs-->
         <h3>Album Names</h3>
         <ol>
           <li>Kanye West - My Beautiful Dark Twisted Fantasy</li>
@@ -20,9 +23,16 @@
           <li>Chance the Rapper - Coloring Book</li>
         </ol>
       </div>
-      <div>
-        <h3>Image Carousel</h3>
-        <img src="images/mochi.gif" width='100' alt='A dancing mochi ball'/> <img src="images/mochi.jpg" width='100' alt='A mochi ball inside a bubble'/> <img src="images/mochi.png" width='100' alt='A mochi ball'/> <img src="images/mochi.svg" width='100' alt='A mochi ball with Bézier handles'/>
+      <div class="right_section"> <!--right side-->
+        <h2>Image Carousel</h2>
+        <div> <!--images box-->
+        <img id="slide_1" src="images/mochi.gif" alt='A dancing mochi ball'/>
+        <img id="slide_2" src="images/mochi.jpg" alt='A mochi ball inside a bubble'/> 
+        <img id="slide_3" src="images/mochi.png" alt='A mochi ball'/> 
+        <img
+            id="slide_4"
+            src="images/mochi.svg" 
+            alt='A mochi ball with Bézier handles'/>
       </div>
       <div>
         <p>There are four different images of mochi presented. The first mochi image is a "gif", which are good for animations. The second mochi image is a "jpg", which are good for photos. The third mochi image is a "png", which are good for diagrams and icons. Finally, the fourth mochi image is a "svg", which are great because they will render pixel-perfect at any resolution. </p>

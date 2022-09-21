@@ -111,7 +111,6 @@ form {
   Rules can be combined on a block to apply the 'cascade' in order
   So you can use two classnames in a single class attribute
   like: <div class="box section">
-
   Rules may combine in unexpected ways - remember that the LAST thing written in this file will have "priority"
   And will be what displays in your client
 */
@@ -139,6 +138,7 @@ form {
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
+  max-width: 450px;
 }
 
 /*
@@ -232,7 +232,6 @@ div.carousel {
     means annoying pop-ins won't happen
     but it also means you need to format your images to be compatible
     or they will stretch weird
-
     - try a tall one and see what happens
     - change the height on a fixed image size and see what happens
     - now make sure that images are _always_ square

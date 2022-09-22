@@ -257,7 +257,7 @@ div.carousel {
 .next:focus {
   margin: 0;
   /* Pick a good border colour and check out how it works with your buttons */
-background-color: gray;
+background-color: goldenrod;
 }
 
 .prev:hover,

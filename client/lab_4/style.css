@@ -128,6 +128,7 @@ form {
 
 .left_section {
   background-color: #2d3047;
+  color: ghostwhite;
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;

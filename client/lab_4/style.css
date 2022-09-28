@@ -135,7 +135,8 @@ form {
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  background-color: #2d3047;
+  color: ghostwhite;
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;

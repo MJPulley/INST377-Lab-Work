@@ -93,7 +93,7 @@ form {
 
   /* colors */
   background-color: #2d3047;
-  color: ghostwhite;
+  color: #93b7be;
 
   /* shapes */
   border-radius: 6px;
@@ -128,7 +128,7 @@ form {
 
 .left_section {
   background-color: #2d3047;
-  color: ghostwhite;
+  color: #93b7be;
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
@@ -136,7 +136,7 @@ form {
 
 .right_section {
   background-color: #2d3047;
-  color: ghostwhite;
+  color: #93b7be;
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;

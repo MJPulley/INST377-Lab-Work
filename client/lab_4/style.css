@@ -309,6 +309,6 @@ form label {
     }
 
     .left_section {
-      flex-grow: 5;
+      flex: 1;
     }
 }

@@ -157,6 +157,7 @@ form {
   padding: 1rem;
   background-color: #2d3047;
   color: #31e981;
+  border: 2px dotted;
   font-size: 1.2rem;
   font-weight: 600;
 }

@@ -1,3 +1,7 @@
+.container {
+    display: flex;
+}
+
 .grid {
     width: 200px;
     height: 400px;
@@ -16,6 +20,7 @@
 }
 
 .mini-grid {
+    margin-left: 50px;
     width: 80px;
     height: 80px;
     display: flex;
@@ -26,5 +31,4 @@
 .mini-grid div {
     height: 20px;
     width: 20px;
-    
 }

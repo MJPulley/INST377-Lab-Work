@@ -36,7 +36,8 @@ async function mainEvent() { // the async keyword means we can make API requests
     */
 
     // const results = await fetch('/api/foodServicePG');
-    const results = await fetch(`/api/foodServicePG?${new URLSearchParams(formProps)}`);
+    const fetchQuery  = new URLSearchParams(formProps);
+    const results = await fetch(`/api/foodServicePG?${fetchQuery}`);
     /*
    ## Get request with query parameters
 

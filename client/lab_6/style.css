@@ -1,3 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  background-color: #ffff;
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #93b7be;
+}
+
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h2, h3 {
+  margin:0;
+  padding:0;
+  padding-bottom:1.5rem;
+}
+
+form {
+  accent-color: hsla(120, 100%, 50%, 0.482);
+}
+
+
+
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  flex: 1;
+}
+
+.container {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex:1;
+}
+
+.header {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+
+
+
+.header h1 {
+  display: block;
+  
+
+  
+  background-color: #2d3047;
+  color: #31e981; 
+
+  
+  border: 2px dotted;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  padding: 1.25rem;
+  margin:0; 
+
+  
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+
+
+
+.box {
+  background-color: rgba(245, 245, 245, 0.4);
+  border: 2px dotted;
+  border-radius: 4px;
+
+  width: fit-content;
+  height:fit-content;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.left_section {
+  background-color: #2d3047;
+  color: #31e981;
+  flex: 0 1 auto;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+
+.right_section {
+  background-color: #2d3047;
+  color: #31e981;
+  flex: 1 2 auto;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.footer {
+  flex-shrink: 0;
+  padding: 1rem;
+  background-color: #2d3047;
+  color: #31e981;
+  border: 2px dotted;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer a {
+  color: gold;
+  text-decoration: underline;
+}
+
+
+.footer a:hover {
+  
+  background-color: hsla(0, 0%, 90%, 0.15);
+  
+  color: rgb(246, 169, 93);
+  text-decoration: none;
+}
+
+.subtitle {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+
+
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.grid img {
+  width: 150px;
+  height: 150px;
+}
+
+
+
+div.carousel {
+  max-width: 300px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.carousel .slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.carousel_item img {
+ 
+  width: 150px; 
+}
+
+.prev,
+.next {
+  border: none;
+  margin: 2px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 45px;
+  padding: 10px;
+  line-height: 0; 
+  border: 2px solid rgb(99,99,99); 
+}
+
+.prev:focus,
+.next:focus {
+  margin: 0;
+  
+border-color: red;
+}
+
+.prev:hover,
+.next:hover {
+  
+background-color: goldenrod;
+}
+
+
+
+form input {
+    
+    width: 100%;
+    width: -moz-available;          
+    width: -webkit-fill-available;  
+    width: fill-available;
+
+    
+    margin-bottom: 1rem;
+    height: 2rem;
+    border-radius: 4px;
+  }
+
+form label {
+  width: 100%;
+  width: -moz-available;          
+  width: -webkit-fill-available;  
+  width: fill-available;
+  align-items: flex-start;
+
+  display: block; 
+  margin-bottom: 0.5rem;
+}
+
+
+
+@media only screen and (max-width: 736px){
+
+    .container {
+      background-color: rgba(204, 8, 162, 0.65);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right_section{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+}
+
+
+
 /* 
     New code bonus: pure CSS data loading icon
     This comes from loading.io/css - it's nice to show that something is happening!

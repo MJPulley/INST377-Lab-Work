@@ -282,7 +282,8 @@
       }
   }
   
-  
+  /* MAP STYLES */
+  #map { height: 180px; }
   
   /* 
       New code bonus: pure CSS data loading icon
